@@ -27,19 +27,19 @@ O aplicativo pode ser executado diretamente a partir da linha de comando, atrav�
 ### Sintaxe utilizando arquivo python
 
 ```bash
-python3 src/cli_minimizer.py "função" "ponto_inicial" "método"
+python3 cli_minimizer.py "função" "ponto_inicial" "método"
 ```
 
 ### Sintaxe utilizando executável
 
 ```bash
-./dist/cli_minimizer "função" "ponto_inicial" "método"
+./cli_minimizer "função" "ponto_inicial" "método"
 ```
 
 ### Exemplo de uso
 
 ```bash
-./dist/cli_minimizer "x[0]**2 + x[1]**2" "[1, 2]" "Newton"
+./cli_minimizer "x[0]**2 + x[1]**2" "[1, 2]" "Newton"
 ```
 
 ### Saída
