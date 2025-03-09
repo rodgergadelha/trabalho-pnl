@@ -43,7 +43,7 @@ def busca_de_linha(funcao, gradiente, x, d, alpha=0.1, beta=0.7, max_iter=100):
     return t
 
 # Método de otimização irrestrita gradiente
-def gradient_method(funcao, ponto_inicial, alpha=0.01, tol=1e-6, max_iter=1000, busca_linear='seção'):
+def gradient_method(funcao, ponto_inicial, alpha=0.01, tol=1e-6, max_iter=1000, busca_linear='armijo'):
     x = x = np.array(ponto_inicial, dtype=float)  # Ponto inicial
     iter_count = 0
     gradiente_func = grad(funcao)
