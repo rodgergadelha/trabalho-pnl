@@ -49,6 +49,6 @@ Valor ótimo: 0.0
 ```
 
 ## Métodos de Otimização Suportados
-1. Método do Gradiente.
-2. Método de Newton.
-3. Método BFGS (Broyden–Fletcher–Goldfarb–Shanno).
+1. Gradiente.
+2. Newton.
+3. BFGS (Broyden–Fletcher–Goldfarb–Shanno).
