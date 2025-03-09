@@ -1,22 +1,48 @@
-# Minimização Não Linear de Funções
+# Manual do CLI Minimizer
 
-Este é um aplicativo CLI (Interface de Linha de Comando) em Python para minimizar funções multivariáveis utilizando métodos numéricos como o **Método de Newton**.
-
-## Funcionalidade
-
-O programa recebe uma função matemática como uma string, um ponto inicial e o método de otimização a ser utilizado. O método de otimização pode ser o **Método de Newton**. O programa retorna o ponto ótimo e o valor ótimo da função minimizada.
+Este é um aplicativo de linha de comando (CLI) escrito em Python que realiza a minimização de funções multivariáveis 
+utilizando diferentes métodos de otimização irrestrita.
 
 ## Requisitos
 
 - Python 3.x
-- Bibliotecas:
-  - `autograd` (para cálculos diferenciais)
-  - `numpy` (para manipulação de arrays)
-  - `argparse` (para lidar com argumentos da linha de comando)
+- Bibliotecas necessárias:
+  - `autograd`
+  - `numpy`
 
-## Instalação
-
-1. Instale as dependências necessárias utilizando o `pip`:
+Você pode instalar as dependências necessárias usando o seguinte comando:
 
 ```bash
 pip install autograd numpy
+```
+
+## Como Usar
+
+O aplicativo pode ser executado diretamente a partir da linha de comando. Ele recebe três argumentos principais:
+
+1. **Função a ser minimizada**: Uma string que representa a função matemática na sintaxe do python.
+2. **Ponto inicial**: Uma string com uma lista python que representa o ponto inicial para a minimização.
+3. **Método de otimização**: O nome do método de otimização a ser utilizado.
+
+### Sintaxe
+
+```bash
+python cli_minimizer.py "função" "ponto_inicial" "método"
+```
+
+### Exemplo de uso
+
+```bash
+python cli_minimizer.py "x[0]**2 + x[1]**2" "[1, 2]" "Newton"
+```
+
+### Saída
+```plaintext
+Ponto ótimo: [0. 0.]
+Valor ótimo: 0.0
+```
+
+## Métodos de Otimização Suportados
+1. Gradiente: Método do Gradiente Descendente.
+2. Newton: Método de Newton.
+3. BFGS: Método BFGS (Broyden–Fletcher–Goldfarb–Shanno).
