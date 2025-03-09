@@ -2,7 +2,8 @@ import autograd.numpy as np
 import argparse
 import bfgs
 import bfgs.main
-from newton import newton_method
+from gradient.gradient import gradient_method
+from newton.newton import newton_method
 
 def minimize_function(func_str, initial_point, method):
     def function(x):
@@ -10,12 +11,15 @@ def minimize_function(func_str, initial_point, method):
         locals = {'x': x}
         return eval(func_str, globals, locals)
 
-    if method == 'Newton':
+    if method =='Gradiente':
+        return gradient_method(function, initial_point)
+    
+    elif method == 'Newton':
         return newton_method(function, initial_point)
     
     elif method =='BFGS':
         return bfgs.main.bfgs(function, initial_point)
-
+    
     return None, None
 
 def main():
