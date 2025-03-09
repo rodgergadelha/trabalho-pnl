@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['cli_minimizer.py'],
+    ['src/cli_minimizer.py'],
     pathex=[],
     binaries=[],
     datas=[],

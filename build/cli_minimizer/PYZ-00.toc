@@ -317,7 +317,7 @@
    '/usr/lib/python3.10/multiprocessing/util.py',
    'PYMODULE'),
   ('netrc', '/usr/lib/python3.10/netrc.py', 'PYMODULE'),
-  ('newton', '/home/rodger/pyhton_projects/newton.py', 'PYMODULE'),
+  ('newton', '/home/rodger/pyhton_projects/src/newton.py', 'PYMODULE'),
   ('nturl2path', '/usr/lib/python3.10/nturl2path.py', 'PYMODULE'),
   ('numbers', '/usr/lib/python3.10/numbers.py', 'PYMODULE'),
   ('numpy',
