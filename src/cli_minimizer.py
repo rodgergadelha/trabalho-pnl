@@ -14,10 +14,10 @@ def minimize_function(func_str, initial_point, method):
     if method =='Gradiente':
         return gradient_method(function, initial_point)
     
-    elif method == 'Newton':
+    if method == 'Newton':
         return newton_method(function, initial_point)
     
-    elif method =='BFGS':
+    if method =='BFGS':
         return bfgs.main.bfgs(function, initial_point)
     
     return None, None
