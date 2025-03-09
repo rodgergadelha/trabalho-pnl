@@ -27,7 +27,7 @@ O aplicativo pode ser executado diretamente a partir da linha de comando, atrav�
 ### Sintaxe utilizando arquivo python
 
 ```bash
-python cli_minimizer.py "função" "ponto_inicial" "método"
+python3 src/cli_minimizer.py "função" "ponto_inicial" "método"
 ```
 
 ### Sintaxe utilizando executável
