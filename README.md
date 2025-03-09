@@ -18,11 +18,18 @@ pip install autograd numpy
 
 ## Como Usar
 
-O aplicativo pode ser executado diretamente a partir da linha de comando, através do arquivo python, ou do executável na pasta "dist". Ele recebe três argumentos principais:
+O aplicativo pode ser executado diretamente a partir da linha de comando. Ele recebe três argumentos principais:
 
 1. **Função a ser minimizada**: Uma string que representa a função matemática na sintaxe do python.
 2. **Ponto inicial**: Uma string com uma lista python que representa o ponto inicial para a minimização.
 3. **Método de otimização**: O nome do método de otimização a ser utilizado.
+
+## Geração de executável (requisito: pyinstaller)
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile src/cli_minimizer.py
+```
 
 ### Sintaxe utilizando arquivo python
 
