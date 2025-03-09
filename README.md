@@ -1,7 +1,7 @@
 # Manual do CLI Minimizer
 
 Este é um aplicativo de linha de comando (CLI) escrito em Python que realiza a minimização de funções multivariáveis 
-utilizando diferentes métodos de otimização irrestrita.
+utilizando diferentes métodos de otimização não linear irrestrita.
 
 ## Requisitos
 
